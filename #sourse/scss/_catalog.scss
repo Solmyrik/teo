@@ -277,6 +277,10 @@
   }
 
   &__form {
+    display: flex;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
     p {
       display: flex;
       padding: 20px 30px;

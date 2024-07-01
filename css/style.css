@@ -1680,6 +1680,21 @@ main {
   }
 }
 
+.footer-catalog__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 991.98px) {
+  .footer-catalog__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer-catalog__form p {
   display: -webkit-box;
   display: -ms-flexbox;
