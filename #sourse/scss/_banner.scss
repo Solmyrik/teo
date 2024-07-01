@@ -1,0 +1,80 @@
+.banner {
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  @media (max-width: $tablet) {
+    height: 240px;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+    // z-index: 2;
+    height: 300px;
+    @media (max-width: $tablet) {
+      height: 240px;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 4;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $tablet) {
+      justify-content: center;
+      height: 240px;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 4;
+    img {
+      width: 100%;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: $white;
+    z-index: 4;
+    flex: 0 0 360px;
+    @media (max-width: $tablet) {
+      flex: 0 1 265px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 276px;
+    }
+  }
+
+  &__decor {
+    position: relative;
+    z-index: 4;
+    img {
+      width: 100%;
+    }
+    @media (max-width: $tablet) {
+      height: 240px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}

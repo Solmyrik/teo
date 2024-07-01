@@ -1,0 +1,125 @@
+.stages {
+  padding: 70px 0px;
+  @media (max-width: $tablet) {
+    padding: 10px 0px;
+  }
+  &__content {
+    display: flex;
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &__left {
+    flex: 0 1 45%;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: $tablet) {
+    }
+  }
+
+  &__wrapper {
+    max-width: 520px;
+    @media (max-width: $tablet) {
+      max-width: 100%;
+    }
+  }
+  &__right {
+    position: relative;
+    flex: 0 1 55%;
+    @media (max-width: $tablet) {
+      flex: auto;
+    }
+  }
+
+  &__title {
+    font-family: Roboto Slab;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 40px;
+    background-color: $green;
+    padding: 3px;
+    border-radius: 5px;
+    color: $white;
+    width: 425px;
+    @media (max-width: $tablet) {
+      width: 100%;
+      text-align: center;
+      border-radius: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    color: #0d2c21;
+    font-family: Roboto Slab;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    @media (max-width: $tablet) {
+      padding: 20px;
+      background-color: $green;
+      color: $white;
+      text-align: center;
+      width: 90%;
+      margin: 0 auto;
+      transform: translate(0, -20px);
+      font-size: 14px;
+    }
+    &.two {
+      padding-right: 50px;
+      @media (max-width: $tablet) {
+        padding: 20px;
+      }
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    border-radius: 5px;
+    background: #0d2c21;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 0;
+    left: -50px;
+    transform: translate(0, -50%);
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__images {
+    padding-bottom: 47.5%;
+    width: 100%;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $green;
+      width: 90%;
+      height: 12px;
+      top: -12px;
+      right: 0;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    &.mob {
+      display: none;
+      @media (max-width: $tablet) {
+        display: block;
+      }
+    }
+    &.pc {
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+}

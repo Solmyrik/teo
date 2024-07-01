@@ -1,0 +1,252 @@
+.answer {
+  padding: 45px 0px 60px 0px;
+  margin-bottom: 40px;
+  @media (max-width: $tablet) {
+    padding: 15px 0px;
+  }
+  &__container {
+  }
+
+  &__title {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    color: $green;
+    @media (max-width: $tablet) {
+      text-align: center;
+      font-size: 16px;
+      // margin-bottom: 20px;
+    }
+  }
+
+  &__content {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    @media (max-width: $tablet) {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  &__left {
+    flex: 0 1 55%;
+  }
+
+  &__slider {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $green;
+      width: 98%;
+      height: 12px;
+      top: -12px;
+      left: 0;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__block {
+    //  width: 100px;
+    overflow: hidden;
+    min-width: 0;
+    overflow: hidden;
+    max-width: 55vw;
+    @media (max-width: $tablet) {
+      max-width: 100vw;
+    }
+  }
+
+  &__wraper {
+    display: flex;
+    min-width: 0;
+    //  min-height: 0;
+  }
+
+  &__slide {
+    flex: 0 0 100%;
+  }
+
+  &__img {
+    padding-bottom: 60%;
+    @media (max-width: 1200px) {
+      padding-bottom: 65%;
+    }
+  }
+
+  &__right {
+    flex: 0 1 45%;
+    //  display: flex;
+    @media (max-width: $tablet) {
+      flex: auto;
+    }
+  }
+
+  &__top {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__arrow {
+    height: 100%;
+    img {
+      height: 100%;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__items {
+    max-width: 488px;
+    @media (max-width: $tablet) {
+      margin-top: 10px;
+    }
+  }
+  &__item {
+    margin-bottom: 15px;
+  }
+  &__label {
+    display: flex;
+    gap: 13px;
+    color: $white;
+    align-items: center;
+    cursor: pointer;
+    @media (max-width: $tablet) {
+      justify-content: center;
+      text-align: center;
+    }
+    div {
+      width: 16px;
+      height: 16px;
+      background-color: $green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      font-size: 12px;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      color: $green;
+      @media (max-width: $tablet) {
+        font-size: 12px;
+      }
+    }
+    &.active {
+      span {
+        background-color: $green;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          transform: rotate(180deg);
+          path {
+            fill: $white;
+          }
+        }
+        @media (max-width: $tablet) {
+          display: none;
+        }
+      }
+    }
+  }
+  &__open {
+    width: 16px;
+    height: 23px;
+    transition: all 0.3s;
+    svg {
+      transition: all 0.3s;
+      path {
+        transition: all 0.3s;
+      }
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  &__contente {
+    margin-top: 10px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+    line-height: 150%;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    @media (max-width: $tablet) {
+      padding: 0px 15px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 48px;
+    @media (max-width: $tablet) {
+      font-size: 12px;
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  &__navigation {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    width: 104px;
+    display: flex;
+    justify-content: space-between;
+    div {
+      cursor: pointer;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
+.swiper-block {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.ibg {
+}
+.answer-pagination {
+  bottom: -50px;
+  left: 50%;
+  position: absolute;
+  margin-top: 48px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background: #d9d9d9;
+    cursor: pointer;
+
+    &-active {
+      background: #0d2c21;
+    }
+  }
+}

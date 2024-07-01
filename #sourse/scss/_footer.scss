@@ -1,0 +1,42 @@
+.footer {
+  background: #08251b;
+  padding: 10px 0px;
+  color: $white;
+  &__container {
+    @media (max-width: $mob) {
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 5px;
+  }
+
+  &__menu {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    @media (max-width: $mob) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    color: $white;
+  }
+
+  &__copy {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+  }
+}

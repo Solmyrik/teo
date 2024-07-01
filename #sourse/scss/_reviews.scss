@@ -1,0 +1,217 @@
+.reviews {
+  &__container {
+    padding: 100px 15px;
+    @media (max-width: $tablet) {
+      padding: 15px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 75px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__left {
+    flex: 0 1 50%;
+  }
+
+  &__suptitle {
+    color: #0d2c21;
+    font-family: Roboto Slab;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+    @media (max-width: $tablet) {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    color: #0d2c21;
+    font-family: Roboto Slab;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media (max-width: $tablet) {
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__right {
+    flex: 0 1 50%;
+    display: flex;
+    gap: 35px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+
+  &__item {
+    flex: 0 1 50%;
+    border-radius: 8px;
+    border: 1px solid #0d2c21;
+    background: #e6e6e6;
+    border-radius: 8px;
+    border: 0px solid #383838;
+    background: #0d2c21;
+  }
+
+  &__avatar {
+    text-align: center;
+    transform: translate(0, -43px);
+  }
+
+  &__name {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    transform: translate(0, -23px);
+  }
+
+  &__content {
+    border-radius: 8px;
+    border: 1px solid #0d2c21;
+    background: #e6e6e6;
+    border-radius: 8px;
+    p {
+      color: #0d2c21;
+      text-align: center;
+      font-family: Roboto Slab;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      padding: 27px 10px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+    color: #0d2c21;
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    a {
+      color: #0d2c21;
+    }
+  }
+
+  &__body {
+  }
+}
+.reviews-body {
+  border-radius: 5px;
+  background: #0d2c21;
+  backdrop-filter: blur(6px);
+  display: flex;
+  gap: 30px;
+  padding-left: 40px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+  &__left {
+    flex: 0 1 30%;
+    @media (max-width: $tablet) {
+      text-align: center;
+    }
+  }
+
+  &__number {
+    color: #e6e6e6;
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 104.25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 94%;
+  }
+
+  &__value {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__right {
+    flex: 0 1 70%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    border-radius: 11.25px;
+    border: 1px solid #fff;
+    background: #0d2c21;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+    padding: 10px 15px;
+    display: flex;
+    gap: 13px;
+  }
+
+  &__avatar {
+    @media (max-width: $tablet) {
+      transform: translate(-15px, -10px);
+
+      img {
+        border: 1px solid #fff;
+        border-radius: 11.25px;
+      }
+    }
+  }
+
+  &__content {
+  }
+
+  &__name {
+    color: #fff;
+    font-family: Roboto Slab;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  &__text {
+    color: #fff;
+    font-family: Roboto Slab;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+  }
+}
